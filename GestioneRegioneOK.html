@@ -1,0 +1,69 @@
+<!DOCTYPE hmtl> <!--Dichiariamo la versione HTML utilizzata (HTML 5), ommettendolo HTML default-->
+<!-- https://github.com/grusso02/Microsoft-Talent-Academy/blob/main/FirstHtml/GestioneRegione.html -->
+<html>
+	<head>
+		<title>My first page</title>
+		<script src=".\script\js\jquery-3.6.0.min.js"></script>
+		<link href=".\script\css\bootstrap.min.css" type="text/css" rel="stylesheet">
+		<script src=".\script\js\bootstrap.bundle.min.js"></script>
+		<script src=".\script\js\myLogicOK.js"></script>
+		<link href=".\script\css\mySite.css" rel="stylesheet">
+		<style>
+			.my-column {
+    			text-align: center;
+			}
+
+			button {
+				margin: 1rem;
+			}
+		</style>
+	</head>
+	<body onload="showRegione()">
+		<div class="topnav">
+			<a href="Home.html">Home</a>
+			<a href="GestioneRegione.html">Gestione Regione</a>
+			<a class="active" href="GestioneRegioneOK.html">Gestione Regione Ok</a>
+			<a href="TestConvertDate.html">Test to convert date</a>
+		</div>
+
+		<div class="container-fluid p-5 bg-primary text-white text-center">
+			<h1>Citizens</h1>
+			<p>Discover the citizens of a town!</p> 
+		</div>
+  
+		<div class="container mt-5">
+			<div class="row">
+				<div id="divRegion" class="col-sm-4 my-column">
+					<h3>Regione</h3>
+					<select name="Region" id="selRegion" onchange="getProvince()">
+						<option value="0" selected>Select a Region</option>
+						<option value="1">Umbria</option>
+						<option value="2">Lazio</option>
+						<option value="3">Toscana</option>
+						<option value="4">Marche</option>
+					</select>
+				</div>
+				<div id="divProvince" class="col-sm-4 my-column" onchange="getTown()">
+					<h3>Provincia</h3>
+					<select name="Province" id="selProvince">
+						<option value="0" selected>Select a Province</option>
+					</select>
+				</div>
+				<div id="divTown" class="col-sm-4 my-column">
+					<h3>Comune</h3>        
+					<select name="Town" id="selTown" onchange="getButton()">
+						<option value="0" selected>Select a Town</option>
+					</select>
+				</div>
+			</div>
+			<div class="row">
+				<div id="divBut" class="col my-column">
+					<button type="button" class="btn btn-primary">Show table</button>
+				</div>
+			</div>
+		</div>
+	</body>
+	</footer>
+
+	</footer>
+</html>

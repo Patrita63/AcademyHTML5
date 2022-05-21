@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    https://stackoverflow.com/questions/33322508/include-html-navigation-bar-in-all-pages
+
+    Avoid: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+    AND Avoid: xmlhttprequest from origin 'null' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+    
+    xmlhttprequest Cross origin requests are only supported for protocol schemes: http, data, chrome, chrome-extension, chrome-untrusted, https.
+    https://stackoverflow.com/questions/10752055/cross-origin-requests-are-only-supported-for-http-error-when-loading-a-local
+<body>
+
+<h2>The XMLHttpRequest Object</h2>
+
+<p id="demo">Let AJAX change this text.</p>
+
+<button type="button" onclick="loadDoc()">Change Content</button>
+
+<script>
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("demo").innerHTML = this.responseText;
+    }
+  };
+  
+  var url = "https://www.w3schools.com/js/ajax_info.txt";
+  url = "./navigationBar.html";
+  xhttp.open("GET", url, true);
+  xhttp.setRequestHeader("Access-Control-Allow-Origin", "./testcors.html");
+  xhttp.setRequestHeader("Access-Control-Allow-Methods", "GET");
+  xhttp.setRequestHeader("Access-Control-Allow-Credentials", "false");
+  xhttp.setRequestHeader("Content-Type", "text/plain");
+  
+  xhttp.send();
+}
+</script>
+
+</body>
+</html>

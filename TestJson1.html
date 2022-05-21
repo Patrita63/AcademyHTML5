@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Parsing a JSON Array.</h2>
+<p>Data written as an JSON array will be parsed into a JavaScript array.</p>
+<p id="demo"></p>
+
+<script>
+const text = '[ { "idRegione":"1", "nomeProvincia":"Perugia", "comuni":["Gubbio","Foligno"]}, { "idRegione":"1", "nomeProvincia":"Terni", "comuni":["Narni","Otricoli"]}, { "idRegione":"2", "nomeProvincia":"Roma", "comuni":["Grottaferrata","Fiumicino"]}, { "idRegione":"2", "nomeProvincia":"Viterbo", "comuni":["Vetralla","Tarquinia"]}, { "idRegione":"3", "nomeProvincia":"Livorno", "comuni":["Piombino","Cecina"]}, { "idRegione":"4", "nomeProvincia":"Ancona", "comuni":["Numana","Sirolo"]}, { "idRegione":"4", "nomeProvincia":"Ascoli Piceno", "comuni":["San Benedetto Del Tronto","Grottammare"]}, { "idRegione":"5", "nomeProvincia":"L\' Aquila", "comuni":["Avezzano","Sulmona"]}, { "idRegione":"5", "nomeProvincia":"Pescara", "comuni":["Città Sant\'Angelo","Elice"]}, { "idRegione":"6", "nomeProvincia":"Forlì", "comuni":["Comune a","Comune b"]} ]';
+const myArr = JSON.parse(text);
+document.getElementById("demo").innerHTML = myArr[6].comuni;
+</script>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+[
+{"ID":1,"Nome":"Umbria","NumeroAbitanti":500000,"IsAutonoma":false,"DataCostituzione":"2000-01-01T00:00:00"},
+{"ID":2,"Nome":"Veneto","NumeroAbitanti":5000000,"IsAutonoma":false,"DataCostituzione":"2001-01-01T00:00:00"},
+{"ID":3,"Nome":"Emilia Romagna","NumeroAbitanti":1500000,"IsAutonoma":false,"DataCostituzione":"2002-01-01T00:00:00"},
+{"ID":4,"Nome":"Val d'Aosta","NumeroAbitanti":23,"IsAutonoma":true,"DataCostituzione":"1963-01-02T00:00:00"},
+{"ID":5,"Nome":"Abruzzo","NumeroAbitanti":56,"IsAutonoma":false,"DataCostituzione":"1998-01-01T00:00:00"},
+{"ID":6,"Nome":"Lombardia","NumeroAbitanti":123456,"IsAutonoma":false,"DataCostituzione":"2000-01-01T00:00:00"},
+{"ID":7,"Nome":"Trentino Alto Adige","NumeroAbitanti":2345,"IsAutonoma":true,"DataCostituzione":"2011-05-01T00:00:00"},
+{"ID":8,"Nome":"Sardegna","NumeroAbitanti":234567,"IsAutonoma":true}
+]
+
